@@ -48,13 +48,7 @@ header{
 
                         &:hover{
                             &::after{
-                                content: '';
-                                position: absolute;
                                 width: 100%;
-                                bottom: -8px;
-                                left: 0;
-                                height: 2px;
-                                background-color: #f7a800;
                             }
                         }
                 }

@@ -1,0 +1,24 @@
+.heros{
+    margin-top: 71px;
+    background-image: url(../../../../public/assets/img1.webp);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: calc(100vh - 200px);
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    padding-bottom: 20px;
+
+    button{
+         text-transform: uppercase;
+            border-radius: 45px;
+            font-weight: bold;
+            color:  #fff;
+            background-color: #ff0000;
+            border: none;
+            width: 150px;
+            height: 40px;
+            cursor: pointer;
+    }
+}
