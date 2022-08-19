@@ -22,3 +22,23 @@
             cursor: pointer;
     }
 }
+
+.chaudBouillant{
+
+    .title{
+        padding: 30px 0;
+        font-weight: bold;
+        text-align: center;
+
+        h1{
+            text-transform: uppercase;
+        }
+
+    }
+
+    &__card{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}
