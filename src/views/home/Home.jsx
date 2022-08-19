@@ -31,9 +31,27 @@ export const Home = () => {
                      <Card1 item={item} index={index}/>
             ))} 
             </div>
-            
-            
-           
+ 
+        </section>
+
+        <section className="kingdomAvantage">
+            <div className="container">
+                    <div className="img1">
+                         <img src="./assets/img5.png" alt="" />
+
+                         <button><span>rejoindre le king</span></button>
+                    </div>
+                    <div className="img2">
+                <img src="./assets/img6.png" alt="" className='img-center' />
+
+                    </div>
+                <div className="img3">
+                    <img src="./assets/img7.png" alt="" />
+                    <button><span>voir tous les avantages</span></button>
+                </div>
+                
+               
+            </div>
         </section>
     </>
   )

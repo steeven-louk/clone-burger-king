@@ -23,6 +23,8 @@
     }
 }
 
+
+/*****CHAUD BOUILLANT*****/
 .chaudBouillant{
 
     .title{
@@ -40,5 +42,74 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
+    }
+}
+
+
+/***KINGDOM***/
+.kingdomAvantage{
+    background: url(../../../../public/assets/img8.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 5% 0;
+    width: 100%;
+
+    .container{
+        display: flex;
+        justify-content: space-around;
+        padding-top: 2em;
+
+        
+            .img1{
+                padding: 15px;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                img{
+                width: 351px;
+                height: 273px;
+                margin-bottom: 30px;
+
+               // align-items: center;
+              }
+
+            }
+            .img2{
+                img{
+                    width: 371px;
+                    height:379px;
+                }
+             }
+            .img3{
+                padding: 15px;
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+               img{
+                width: 449px;
+                height: 232px;
+                display: flex;
+                flex-direction: column;
+                margin-bottom: 65px;
+
+               }
+             }
+             button{
+                text-transform: uppercase;
+                   border-radius: 45px;
+                   font-weight: bold;
+                   color:  #fff;
+                   background-color: #f7a800;
+                   border: none;
+                   width: 250px;
+                   height: 50px;
+                  // margin: 0 auto;
+                   cursor: pointer;
+           }
+        
     }
 }
