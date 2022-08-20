@@ -1,32 +1,35 @@
 import React, { useState } from 'react'
 import Card1 from '../../components/card/Card1'
+import Card2 from '../../components/card/Card2'
+import { Footer } from '../../components/footer/Footer'
 import { Header } from '../../components/header/Header'
-import Chaud from '../../data'
+import {Chaud, Faim} from '../../data'
 
 import './styles/style.scss'
 
 export const Home = () => {
 
  const [chaudSection] = useState(Chaud);
+ const [faimSection] = useState(Faim);
 
-//    console.log('chaud', chaudSection);
+    //console.log('chaud', Faim);
 
   return (
     <>
         <div className="header">
-            <Header />
+            <Header /> 
         </div>
         <section className="heros">
             <button><span>découvrez-le</span></button>
         </section>
 
-        <section className="chaudBouillant">
+        <section className="container__card">
             <div className="title">
                 <h1>chaud bouillant !</h1>
                 <p>Découvrez les actualités Burger King®</p>
             </div>
 
-            <div className="chaudBouillant__card">
+            <div className="card">
                 {chaudSection?.map((item, index) =>(
                      <Card1 item={item} index={index}/>
             ))} 
@@ -52,6 +55,22 @@ export const Home = () => {
                 
                
             </div>
+        </section>
+
+        <section className="container__card">
+            <div className="title">
+                <h1>UNE PETITE OU UNE GROSSE FAIM ? 🍔</h1>
+            </div>
+
+            <div className="card">
+                {faimSection?.map((item, index) =>(
+                <Card2 item={item} index={index}/>
+            ))} 
+            </div>
+        </section>
+
+        <section className="footer">
+            <Footer/>
         </section>
     </>
   )
