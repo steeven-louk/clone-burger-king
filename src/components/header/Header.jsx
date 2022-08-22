@@ -1,14 +1,29 @@
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import React from 'react'
+import React, { useState } from 'react';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 import './styles/style.scss';
 
 export const Header = () => {
+
+  const [navbar, setNavbar] = useState(false);
+
+const ChangeNavBg = () =>{
+   if(window.scrollY >= 20) {
+       setNavbar(true);
+   } else{
+       setNavbar(false);
+   }
+}
+
+   window.addEventListener('scroll', ChangeNavBg);
+  
+
   return (
-    <header>
+    <header className={navbar? 'header' : ''}>
         <div className="menu">
             <img src="./assets/menu.png" alt="" className="menu_icons" />
-            <ul>
+            <ul className={navbar? 'link_color': ''}>
             <li><a href="/">notre carte</a> </li>
             <li><a href="/">le coin famille</a> </li>
             <li><a href="/">recrutez-nous!</a> </li>
@@ -34,7 +49,7 @@ export const Header = () => {
          
 
 
-         <button><span>click & colelct</span> <img src="./assets/click_collect.png" alt="" className='btn-icon' /></button>
+         <button><span>click & collect <img src="./assets/click_collect.png" alt="" className='btn-icon' /></span> </button>
         </div>
     </header>
   )

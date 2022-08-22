@@ -11,8 +11,7 @@ export const Home = () => {
 
  const [chaudSection] = useState(Chaud);
  const [faimSection] = useState(Faim);
-
-    //console.log('chaud', Faim);
+ 
 
   return (
     <>

@@ -3,7 +3,7 @@ import './styles/styles.scss'
 
 const Card2 = (props) =>{
 
-    console.log(props);
+
 
     return(
         <>
