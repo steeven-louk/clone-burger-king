@@ -1,44 +1,49 @@
-.heros{
-    //margin-top: 71px;
+.heros {
+
     background-image: url(../../../../public/assets/img1.webp);
     background-position: center;
     background-size: cover;
     width: 100%;
-    height: calc(100vh - 100px);
+    height: 100vh;
     display: flex;
     align-items: flex-end;
     justify-content: center;
     padding-bottom: 20px;
 
-    button{
-         text-transform: uppercase;
-            border-radius: 45px;
-            font-weight: bold;
-            color:  #fff;
-            background-color: #ff0000;
-            border: none;
-            width: 150px;
-            height: 40px;
-            cursor: pointer;
+    button {
+        text-transform: uppercase;
+        border-radius: 45px;
+        font-weight: bold;
+        font-size: 16px;
+        color: #fff;
+        background-color: #ff0000;
+        border: none;
+        width: 150px;
+        height: 40px;
+        cursor: pointer;
     }
 }
 
 
 /*****Card*****/
-.container__card{
+.container__card {
 
-    .title{
+    padding: 0 25px;
+
+    .title {
         padding: 30px 0;
         font-weight: bold;
         text-align: center;
 
-        h1{
+        h1 {
             text-transform: uppercase;
+            color: #303133;
+            font-size: 38px;
         }
 
     }
 
-    .card{
+    .card {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
@@ -47,69 +52,72 @@
 
 
 /***KINGDOM***/
-.kingdomAvantage{
+.kingdomAvantage {
+
     background: url(../../../../public/assets/img8.png) no-repeat;
     background-position: center;
     background-size: cover;
     margin: 5% 0;
     width: 100%;
 
-    .container{
+    .container {
         display: flex;
         justify-content: space-around;
         padding-top: 2em;
 
-        
-            .img1{
-                padding: 15px;
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
 
-                img{
+        .img1 {
+            padding: 15px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            img {
                 width: 351px;
                 height: 273px;
                 margin-bottom: 30px;
 
-               // align-items: center;
-              }
-
             }
-            .img2{
-                img{
-                    width: 371px;
-                    height:379px;
-                }
-             }
-            .img3{
-                padding: 15px;
-                align-items: center;
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
 
-               img{
+        }
+
+        .img2 {
+            img {
+                width: 371px;
+                height: 379px;
+            }
+        }
+
+        .img3 {
+            padding: 15px;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            img {
                 width: 449px;
                 height: 232px;
                 display: flex;
                 flex-direction: column;
                 margin-bottom: 65px;
 
-               }
-             }
-             button{
-                text-transform: uppercase;
-                   border-radius: 45px;
-                   font-weight: bold;
-                   color:  #fff;
-                   background-color: #f7a800;
-                   border: none;
-                   width: 250px;
-                   height: 50px;
-                  // margin: 0 auto;
-                   cursor: pointer;
-           }
-        
+            }
+        }
+
+        button {
+            text-transform: uppercase;
+            border-radius: 45px;
+            font-weight: bold;
+            color: #fff;
+            background-color: #f7a800;
+            border: none;
+            width: 250px;
+            height: 50px;
+            // margin: 0 auto;
+            cursor: pointer;
+        }
+
     }
 }
