@@ -1,10 +1,22 @@
+import { useEffect, useState } from 'react';
 import './App.css';
+import LoaderComp from './components/Loader';
 import { Home } from './views/home/Home';
 
 function App() {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+   const timer = setTimeout(() => {
+        setLoading(false)
+      }, 2000);
+      return ()=> clearTimeout(timer);
+  }, [loading])
+
   return (
     <div className="App">
-        <Home />
+      {loading? <LoaderComp/> : <Home />}   
     </div>
   );
 }
