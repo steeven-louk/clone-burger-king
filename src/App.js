@@ -1,7 +1,9 @@
 import { useEffect, useState } from 'react';
-import './App.css';
+
 import LoaderComp from './components/Loader';
 import { Home } from './views/home/Home';
+
+import './App.css';
 
 function App() {
 
@@ -12,7 +14,7 @@ function App() {
         setLoading(false)
       }, 2000);
       return ()=> clearTimeout(timer);
-  }, [loading])
+  }, [loading]);
 
   return (
     <div className="App">
